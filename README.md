@@ -1,4 +1,4 @@
-# Peer Review Backend — Project Backlog
+# Peer Review Backend
 
 A Rails (API-only) backend for a developer peer-review platform. Developers post pull requests, others review them, developers follow people and frameworks to populate a feed, comment on posts, chat in real time, and attach images/videos to posts.
 
