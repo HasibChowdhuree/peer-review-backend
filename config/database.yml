@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: peer_review_backend_development
+
+test:
+  <<: *default
+  database: peer_review_backend_test
+
+production:
+  <<: *default
+  database: peer_review_backend_production
+  username: peer_review_backend
+  password: <%= ENV["PEER_REVIEW_BACKEND_DATABASE_PASSWORD"] %>
